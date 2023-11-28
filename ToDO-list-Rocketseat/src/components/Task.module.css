@@ -1,0 +1,16 @@
+.tasks {
+    height: 17.93rem;
+    width: 46rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 5rem;
+}
+
+.tasksHeader {
+    height: 1.18rem;
+    
+}
