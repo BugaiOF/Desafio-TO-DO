@@ -1,20 +1,8 @@
-.InputBox {
-    display: flex;
-    justify-content: center;
-    width: 40rem;
-    height: 50px;
-    background: red;
-    margin-left: auto;
-    margin-right: auto; 
-    margin-top: -1.5rem;
-}
-
 .wrapper {
     max-width: 46rem;
     margin: 2rem auto;
     padding: 0 1rem;
 
     
-    gap: 59rem;
-    
+    gap: 59px;
 }

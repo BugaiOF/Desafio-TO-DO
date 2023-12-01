@@ -9,7 +9,7 @@ export function Task (){
                 <header>
                     <form 
                    /*  onSubmit={handleCreateNewTask}  */
-                    className={styles.form}>
+                    className={styles.Search}>
                     <textarea 
                     name="task"
                     placeholder='Adicione uma nova tarefa'
@@ -25,7 +25,7 @@ export function Task (){
                 <main>
                     <article>
                         <div className={styles.headerTask}>
-                            <p>tarefas criadas <span>0</span></p>
+                            <p>Tarefas criadas <span>0</span></p>
                             <p>Concluido <span>0</span></p>
                         </div>
                     </article>

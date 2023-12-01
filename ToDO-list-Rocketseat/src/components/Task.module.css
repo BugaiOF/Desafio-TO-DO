@@ -1,11 +1,11 @@
-.form {
+.Search {
     display: flex;
     gap: 0.5rem;
     justify-content: center;
-    margin-top: calc(0px -3.8rem);
+    margin-top: -3.8rem
 }
 
-.form textarea {
+.Search textarea {
     width: 40rem;
     background: var(--gray-500);
     border: 0;
@@ -17,7 +17,7 @@
     line-height: 1.4;
 }
 
-.form button {
+.Search button {
     display: flex;
     background: var(--blue-dark);
     justify-content: center;
@@ -34,7 +34,7 @@
     outline: transparent;
 }
 
-.form textarea::-webkit-scrollbar {
+.Search textarea::-webkit-scrollbar {
     display: none;
 }
 
@@ -104,7 +104,7 @@
     color: var(--gray-300);
 }
 
-.form button:disabled{
+.Search button:disabled{
     opacity: 0.5;
     cursor: not-allowed;
 }
