@@ -1,7 +1,5 @@
 import { Header } from './components/Header.tsx'
-import { Input } from './components/Input.tsx';
-import { Button } from './components/Button.tsx';
-import { TaskTable } from './components/TaskTable.tsx';
+import { Task } from './components/Task.tsx';
 
 import './Global.module.css'
 
@@ -14,15 +12,11 @@ export function App(){
   return (
     <div>
       <Header/>
-      <div className={styles.InputBox}>
-      <Input />
-      <Button/>
-      </div>
-      <main>
-        <div>
-          <TaskTable/>
+      <div className={styles.wrapper}>
+          <main>
+            <Task/>
+          </main>
         </div>
-      </main>
-    </div>
+      </div>
   )
 }
