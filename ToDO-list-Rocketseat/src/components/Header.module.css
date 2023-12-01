@@ -2,9 +2,10 @@
     background: var(--gray-700);
     display: flex;
     justify-content: center;
-    padding: 3rem 0;
+    height: 12.5rem;
 }
 
 .Header img {
-    height: 3rem;
+    margin-top: 3rem;
+    position: absolute;
 }

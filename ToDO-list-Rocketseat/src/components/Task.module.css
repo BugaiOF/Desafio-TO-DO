@@ -1,44 +1,110 @@
 .form {
     display: flex;
-    gap: 0.75rem;
-    flex: 1;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: calc(0px -3.8rem);
+}
 
-    align-items: center;
-    justify-content: space-between;
-
+.form textarea {
+    width: 40rem;
+    background: var(--gray-500);
+    border: 0;
+    resize: none;
+    height: 3.375rem;
     padding: 1rem;
     border-radius: 8px;
-
-    background-color: var(--gray-500);
-    border: 1px solid var(--gray-400);
+    color: var(--gray-300);
+    line-height: 1.4;
 }
 
+.form button {
+    display: flex;
+    background: var(--blue-dark);
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 0;
+    border-radius: 8px;
+    color: var(--gray-100);
+    cursor: pointer;
+}
 
+:focus {
+    outline: transparent;
+}
+
+.form textarea::-webkit-scrollbar {
+    display: none;
+}
 
 .headerTask {
-    height: 1.18rem;
     display: flex;
     justify-content: space-between;
-    width: 46rem;
-    margin-bottom: 2.5rem;
+    align-items: center;
+    margin-top: 4rem;
 }
 
-
-.form > Button{
-    color: var(--gray-100);
-    background: var(--blue-dark);
-    margin-left: 8px;
-    width: 5.62rem;
-    height: 3.12rem;
-    border-radius: 8px;
-    font-size: 2rem;
+.headerTask p:first-of-type {
+    color: var(--blue);
+    font-family: 'Inter';
+    font-size: normal;
+    font-weight: 700;
+    font-size: 14px;
 }
 
-.tasks {
-    height: 17.93rem;
-    width: 46rem;
-    border: 1px solid red;
-    margin-left: auto;
-    margin-right: auto; 
-    margin-top: 5rem;
+.headerTask p {
+    color: var(--purple);
+    font-family: 'Inter';
+    font-size: normal;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.headerTask span{
+    font-family: 'Inter';
+    font-size: normal;
+    font-weight: 700;
+    font-size: 14px;
+
+    padding: 2px 8px;
+    color: var(--gray-200);
+    border-radius: 999px;
+    background: var(--gray-400);
+}
+
+.noTask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.56rem;
+    border-top: 1px solid var(--gray-400);
+    border-radius: 5px;
+
+}
+
+.noTask img {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.noTask p:first-of-type {
+    font-family: 'Inter';
+    font-size: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+
+}
+
+.noTask p{
+    font-family: sans-serif;
+    font-weight: 400;
+    color: var(--gray-300);
+}
+
+.form button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
 }

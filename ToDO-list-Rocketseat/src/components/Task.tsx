@@ -1,4 +1,6 @@
 import styles from './Task.module.css'
+import  Clipboard  from '../assets/Clipboard.svg'
+import  Plus  from '../assets/Plus.svg'
 
 export function Task (){
     return(
@@ -15,6 +17,7 @@ export function Task (){
                    />
                    <button type='submit'>
                     Criar
+                    <img src={Plus} alt="" />
                    </button>
                     </form>
                 </header>
@@ -27,8 +30,10 @@ export function Task (){
                         </div>
                     </article>
 
-                    <div className={styles.tasks}>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, amet! Ipsam quidem voluptas repellat deleniti fuga inventore error incidunt ullam a officia, praesentium commodi molestias eius quasi! Quod, dignissimos neque!</p>
+                    <div className={styles.noTask}>
+                        <img src={Clipboard} />
+                        <p>Você ainda não tem tarefa registradas</p>
+                        <p>Crie tarefas e organize seus itens a fazer</p>
                     </div>
                 </main>
             </div>
