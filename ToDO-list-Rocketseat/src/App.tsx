@@ -1,8 +1,10 @@
+import { Header } from "./Components/Header/Index"
+
 function App() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <Header/>
+    </>
   )
 }
 
