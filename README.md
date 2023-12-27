@@ -24,6 +24,7 @@ https://github.com/BugaiOF/Desafio-TO-DO/assets/112825271/aa1e3c88-e1ca-4b8d-b07
 ### • Remover uma tarefa
 ### • Marcar e desmarcar uma tarefa como concluída
 ### • Mostrar o progresso de conclusão das tarefas
+### • Salvar progresso de tarefas em armazenamento local do navegador
 
 </br>
 
