@@ -1,53 +1,30 @@
-<h2 align="center"> Desafio ToDo-list </h2>
+# React + TypeScript + Vite
 
-<p align="center">
-  TODO LIST - Projeto IGNITE (RocketSeat) 💻 
-</p>
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-<br>
+Currently, two official plugins are available:
 
-## 💻 Projeto
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+## Expanding the ESLint configuration
 
-https://github.com/BugaiOF/Desafio-TO-DO/assets/112825271/e83a2742-88f8-4290-ac12-a8fb5c193c8e
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
+- Configure the top-level `parserOptions` property like this:
 
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
 
-
-<br>
-
-### Aplicativo de lista de tarefas.
-
-## Funções:
-
-### • Adicionar uma nova tarefa
-### • Remover uma tarefa
-### • Marcar e desmarcar uma tarefa como concluída
-### • Mostrar o progresso de conclusão das tarefas
-
-</br>
-
-## 🚀 Tecnologias
-
-Para realização do projeto utilizei as seguinte tecnologias:
-
-- React
-- TypeScript
-- HTML e CSS
-- Git e Github
-- Figma
-- Vite
-- local Storage
-- React Icons
-</br>
-
-## Instalação
-
-* Node.js
-* Faça o clone do projeto
-* Execute o comando ```npm install```
-
-### Rodar o projeto
-* ```npm run dev``` - Vai dar start no servido local com ts-node o enderaço do server local vai ser parecido com  http://localhost:3000 . 
-
-Realizado por Gustavo Silveira
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
